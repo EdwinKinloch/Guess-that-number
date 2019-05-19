@@ -16,9 +16,9 @@ function compareNumbers() {
     let enteredNumber = Number(document.getElementById("enteredNumber").value);
     let randomNumber = random_item(myNumbers);
     if (randomNumber === enteredNumber) {
-        document.getElementById("display").textContent="Correct";
+        document.getElementById("displayCorrect").textContent = "Correct";
     }else{
-        document.getElementById("display").textContent= "Incorrect";
+        document.getElementById("displayWrong").textContent = "Wrong";
     }
 }
 
