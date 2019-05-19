@@ -1,24 +1,17 @@
 
 const myNumbers = [1,2,3,4,5,6,7,8,9,10];
 
-/*This is function pick a random element from the myNumbers array. 
+/*This function when ran pick a random element from the myNumbers array. 
 Just call random_item(myNumbers) to get random number.
 */
 function random_item(myNumbers)
 {
-  
-return myNumbers[Math.floor(Math.random()*myNumbers.length)];
-     
+return myNumbers[Math.floor(Math.random()*myNumbers.length)];   
 }
 
-
-/* 
-I need to create an Event trigger that runs a function to assign the user's input to a varibale
-When the user enter a number
+/*
+This function when ran compares the number the user entered to the randomly picked number.
 */
-
-document.getElementById("submitNumber").addEventListener("click", compareNumbers);
-
 function compareNumbers() {
     let enteredNumber = Number(document.getElementById("enteredNumber").value);
     let randomNumber = random_item(myNumbers);
@@ -28,6 +21,13 @@ function compareNumbers() {
         document.getElementById("display").textContent= "Incorrect";
     }
 }
+
+/*
+This event listener runs the compareNumber() function when the submit button is clicked.
+*/
+document.getElementById("submitNumber").addEventListener("click", compareNumbers);
+
+
 
 
 
