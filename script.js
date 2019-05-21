@@ -17,8 +17,10 @@ function compareNumbers() {
     let randomNumber = random_item(myNumbers);
     if (randomNumber === enteredNumber) {
         document.getElementById("displayCorrect").textContent = "Correct";
+        setTimeout("location.href = 'index.html'",1000);
     }else{
         document.getElementById("displayWrong").textContent = "Wrong";
+        setTimeout("location.href = 'index.html'",1000);
     }
 }
 
