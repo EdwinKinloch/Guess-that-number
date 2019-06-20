@@ -1,5 +1,5 @@
 
-const myNumbers = [1,2,3,4,5,6,7,8,9,10];
+const myNumbers = [1,2,3];
 
 /*This function when ran pick a random element from the myNumbers array. 
 Just call random_item(myNumbers) to get random number.
